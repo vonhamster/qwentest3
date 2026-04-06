@@ -9,7 +9,7 @@ export const homeTemplate = `
       <p class="card-text">Tauri + Bootstrap 5 + TypeScript</p>
     </div>
   </div>
-
+  
   <div class="card mb-3">
     <div class="card-header">
       <h5 class="mb-0">О приложении</h5>
@@ -23,6 +23,7 @@ export const homeTemplate = `
         <li class="list-group-item">🎨 <strong>Bootstrap 5</strong> - популярная CSS-библиотека</li>
         <li class="list-group-item">📘 <strong>TypeScript</strong> - типизированный JavaScript</li>
         <li class="list-group-item">📱 <strong>Android</strong> - целевая платформа</li>
+        <li class="list-group-item">🐧 <strong>Linux</strong> - платформа разработки</li>
       </ul>
     </div>
   </div>
