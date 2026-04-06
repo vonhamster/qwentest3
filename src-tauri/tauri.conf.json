@@ -27,7 +27,7 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["apk"],
+    "targets": ["apk", "deb"],
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -38,6 +38,11 @@
     "android": {
       "minSdkVersion": 24,
       "targetSdkVersion": 34
+    },
+    "linux": {
+      "deb": {
+        "depends": ["webkit2gtk-4.1", "libgtk-3-0", "libjavascriptcoregtk-4.1-0"]
+      }
     }
   }
 }
