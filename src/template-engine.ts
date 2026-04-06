@@ -89,21 +89,21 @@ class TemplateEngine {
     
     // Handle {{variable}} syntax
     const varRegex = /{{\s*([a-zA-Z0-9_.]+)\s*}}/g;
-    result = result.replace(varRegex, (match, path) => {
+    result = result.replace(varRegex, (_match, path) => {
       const value = this.getNestedValue(context, path);
       return value !== undefined ? String(value) : '';
     });
     
     // Handle {{#if condition}}...{{/if}} syntax
     const ifRegex = /{{#\s*if\s+([a-zA-Z0-9_.]+)\s*}}([\s\S]*?){{\s*\/\s*if\s*}}/g;
-    result = result.replace(ifRegex, (match, condition, content) => {
+    result = result.replace(ifRegex, (_match, condition, content) => {
       const value = this.getNestedValue(context, condition);
       return value ? content : '';
     });
 
     // Handle {{#each array}}...{{/each}} syntax
     const eachRegex = /{{#\s*each\s+([a-zA-Z0-9_.]+)\s*}}([\s\S]*?){{\s*\/\s*each\s*}}/g;
-    result = result.replace(eachRegex, (match, arrayPath, content) => {
+    result = result.replace(eachRegex, (_match, arrayPath, content) => {
       const array = this.getNestedValue(context, arrayPath);
       if (!Array.isArray(array)) {
         return '';
