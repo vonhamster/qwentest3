@@ -1,69 +1,52 @@
 ```
 # Dependencies
 node_modules/
-vendor/
 
 # Build artifacts
 dist/
 build/
 target/
 
-# Tauri specific
-src-tauri/target/
-**/*.app
-**/*.dmg
-**/*.exe
-**/*.msi
-**/*.AppImage
-
-# Logs
+# Logs and temp files
 *.log
+*.tmp
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Editor/IDE
+# Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-*.tmp
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Python (if applicable)
+# Python
 __pycache__/
 *.pyc
 *.pyo
-.Python
-venv/
-.venv/
-pip-log.txt
-pip-selfcheck.json
+*.pyd
 
-# Coverage
-coverage/
-htmlcov/
-.coverage
-
-# MyPy
-.mypy_cache/
-
-# PyTest
-.pytest_cache/
-
-# Gradle
-.gradle/
-
-# Compiled JavaScript
-*.min.js
-*.bundle.js
-
-# Temporary files
-*.tmp
-*.temp
+# Compression
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
