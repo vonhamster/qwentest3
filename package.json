@@ -1,0 +1,20 @@
+{
+  "name": "tauri-bootstrap-app",
+  "version": "1.0.0",
+  "description": "Tauri application with Bootstrap 5 and TypeScript",
+  "scripts": {
+    "tauri": "tauri",
+    "build": "tsc",
+    "dev": "tauri dev",
+    "android:build": "tauri android build",
+    "android:dev": "tauri android dev"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  }
+}
