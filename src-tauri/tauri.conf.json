@@ -17,8 +17,7 @@
         "width": 400,
         "height": 800,
         "resizable": false,
-        "fullscreen": false,
-        "mobile": true
+        "fullscreen": false
       }
     ],
     "security": {
@@ -27,7 +26,7 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["apk", "deb"],
+    "targets": ["deb"],
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",
@@ -35,10 +34,6 @@
       "icons/icon.icns",
       "icons/icon.ico"
     ],
-    "android": {
-      "minSdkVersion": 24,
-      "targetSdkVersion": 34
-    },
     "linux": {
       "deb": {
         "depends": ["webkit2gtk-4.1", "libgtk-3-0", "libjavascriptcoregtk-4.1-0"]

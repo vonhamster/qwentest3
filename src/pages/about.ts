@@ -4,53 +4,53 @@
 export const aboutTemplate = `
 <div class="about-page">
   <div class="card mb-3">
-    <div class="card-header bg-info text-white">
+    <div class="card-header bg-primary text-white">
       <h5 class="mb-0">О приложении</h5>
     </div>
     <div class="card-body">
       <p class="card-text">
-        Это демонстрационное приложение показывает возможности связки 
-        <strong>Tauri + Bootstrap 5 + TypeScript</strong>.
+        Базовое Tauri-приложение с использованием Bootstrap 5 и TypeScript.
       </p>
-      
-      <h6 class="mt-4">Технологии:</h6>
-      <ul class="list-group mb-3">
+      <h6 class="mt-3">Технологии:</h6>
+      <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span>Tauri Framework</span>
-          <span class="badge bg-secondary">v2</span>
+          Tauri v2
+          <span class="badge bg-primary rounded-pill">Framework</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span>Bootstrap</span>
-          <span class="badge bg-primary">v5.3</span>
+          Bootstrap 5.3.3
+          <span class="badge bg-primary rounded-pill">UI</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span>TypeScript</span>
-          <span class="badge bg-info">ES2020</span>
+          TypeScript
+          <span class="badge bg-primary rounded-pill">Language</span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          <span>Vite</span>
-          <span class="badge bg-warning text-dark">Build Tool</span>
+          Vite
+          <span class="badge bg-primary rounded-pill">Build</span>
         </li>
       </ul>
+    </div>
+  </div>
 
-      <h6 class="mt-4">Архитектура:</h6>
-      <div class="accordion" id="architectureAccordion">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-              📁 Структура проекта
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#architectureAccordion">
-            <div class="accordion-body">
-              <code class="d-block mb-2">src/</code>
-              <code class="d-block mb-2">├── main.ts</code>
-              <code class="d-block mb-2">├── router.ts</code>
-              <code class="d-block mb-2">├── template-engine.ts</code>
-              <code class="d-block mb-2">├── pages/</code>
-              <code class="d-block mb-2">├── layouts/</code>
-              <code class="d-block mb-2">└── components/</code>
-            </div>
+  <div class="card mb-3">
+    <div class="card-header">
+      <h5 class="mb-0">Платформы</h5>
+    </div>
+    <div class="card-body">
+      <div class="row g-2">
+        <div class="col-6">
+          <div class="p-3 border rounded text-center bg-light">
+            <span class="d-block fs-4">📱</span>
+            <strong>Android</strong>
+            <small class="d-block text-muted">Мобильное приложение</small>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border rounded text-center bg-light">
+            <span class="d-block fs-4">🐧</span>
+            <strong>Linux</strong>
+            <small class="d-block text-muted">Десктопное приложение</small>
           </div>
         </div>
       </div>
@@ -58,9 +58,18 @@ export const aboutTemplate = `
   </div>
 
   <div class="card mb-3">
-    <div class="card-body text-center">
-      <p class="text-muted mb-2">Создано с помощью Tauri</p>
-      <a href="/" class="btn btn-primary">На главную</a>
+    <div class="card-header">
+      <h5 class="mb-0">Функциональность</h5>
+    </div>
+    <div class="card-body">
+      <ul class="list-unstyled mb-0">
+        <li class="mb-2">✅ Клиентский роутер для навигации</li>
+        <li class="mb-2">✅ Шаблонизатор с поддержкой layout</li>
+        <li class="mb-2">✅ Вложенные структуры шаблонов</li>
+        <li class="mb-2">✅ Загрузка шаблонов из файлов</li>
+        <li class="mb-2">✅ Локальная версия Bootstrap 5</li>
+        <li class="mb-2">✅ Адаптивный мобильный интерфейс</li>
+      </ul>
     </div>
   </div>
 </div>
