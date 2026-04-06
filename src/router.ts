@@ -71,8 +71,8 @@ class Router {
     const state = event.state as { path?: RoutePath };
     if (state?.path) {
       this.currentPath = state.path;
-      this.listeners.forEach(listener => listener(state.path));
-      this.updateActiveNavLinks(state.path);
+      this.listeners.forEach(listener => listener(state.path!));
+      this.updateActiveNavLinks(state.path!);
     }
   }
 
